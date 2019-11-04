@@ -90,7 +90,14 @@ return [
             'prefix' => '',
             'prefix_indexes' => true,
         ],
-
+        'mongodb' => [
+            'driver'   => 'mongodb',
+            'host'     => env('MONGO_HOST','localhost'),
+            'port'     => env('MONGO_PORT',27017),
+            'database' => env('MONGO_DATABASE','mongo'),
+            'username' => env('MONGO_USERNAME'),
+            'password' => env('MONGO_PASSWORD'),
+        ],
     ],
 
     /*
